@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+	{% include head.html %}
+	<style type="text/css">
+		h2.text {
+			color: #484848;
+		}
+		p.text {
+			color: #484848;
+			font-size: 1.2em;
+		}
+		.masthead.segment {
+			min-height: 300px;
+			padding: 1em 0em;
+		}
+		.masthead .logo.item img {
+			margin-right: 1em;
+		}
+		.masthead .ui.menu .ui.button {
+			margin-left: 0.5em;
+		}
+		.masthead h1.ui.header {
+			margin-top: 1.5em;
+			margin-bottom: 0em;
+			font-size: 3em;
+			font-weight: normal;
+		}
+		.masthead h2 {
+			font-size: 1.0em;
+			font-weight: normal;
+		}
+	</style>
+	<body>
+		{% include header.html %}
+		<div class="pusher">
+			<div class="ui inverted vertical masthead center aligned segment">
+				<div class="ui text container">
+					<h1 class="ui inverted header">
+						<img src="/assets/datamotlogolight.svg" />
+						Datamot
+					</h1>
+					<h2>A JOB DEPLOYER</h2>
+				</div>
+			</div>
+		</div>
+		<div class="ui centered grid" style="margin-top: 2em; margin-bottom: 1em;">
+			<div class="three wide column">
+				<h2 class="text">Easy way to production</h2>
+				<p class="text">
+					Datamot helps you to deploy your hadoop batch jobs without pain. It solves infrustructural
+					and configuration issues. Concentrate on your code not on infrustructure.
+				</p>
+			</div>
+			<div class="three wide column">
+				<h2 class="text">Structure your code</h2>
+				<p class="text">
+					Deploy your daily code to production without significant changes. Using variables
+					you can deploy your jupyter code with only small changes to hadoop production cluster.
+				</p>
+			</div>
+			<div class="three wide column">
+				<h2 class="text">Quickly test your ideas in scale</h2>
+				<p class="text">
+					Use profiles to quickly run your sketch code on a cluster. Just change a profile
+					to deploy tested code in production mode.
+				</p>
+			</div>
+		</div>
+		<div class="ui centered grid">
+			<div class="four wide column">
+				<a href="/assets/screenshots/coordinator.png">
+					<div class="ui segment">
+						<img class="ui fluid image" src="/assets/screenshots/coordinator.png" />
+					</div>
+				</a>
+			</div>
+			<div class="four wide column">
+				<a href="/assets/screenshots/dataset.png">
+					<div class="ui segment">
+						<img class="ui fluid image" src="/assets/screenshots/dataset.png" />
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="ui centered grid">
+			<div class="four wide column">
+				<a href="/assets/screenshots/deploy.png">
+					<div class="ui segment">
+						<img class="ui fluid image" src="/assets/screenshots/deploy.png" />
+					</div>
+				</a>
+			</div>
+			<div class="four wide column">
+				<a href="/assets/screenshots/schedule.png">
+					<div class="ui segment compact">
+						<img class="ui fluid image" src="/assets/screenshots/schedule.png" />
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="ui centered grid" style="margin-top: 2em; margin-bottom: 1em;">
+			<div class="nine wide column">
+				<h3 class="ui header">Import data to HDFS</h3>
+				<script src="https://gist.github.com/sherzodv/996fd101dc3ef7ac0c9a8f5131033645.js"></script>
+			</div>
+			<div class="nine wide column">
+				<h3 class="ui header">Import data to HDFS</h3>
+				<script src="https://gist.github.com/sherzodv/996fd101dc3ef7ac0c9a8f5131033645.js"></script>
+			</div>
+		</div>
+		{% include footer.html %}
+	</body>
+</html>

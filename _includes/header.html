@@ -1,0 +1,19 @@
+<div class="ui fixed inverted secondary menu">
+	{% assign default_paths = site.pages | map: "path" %}
+	{% assign page_paths = site.header_pages | default: default_paths %}
+	<div class="ui container inverted">
+		<a class="header item" href="/">
+			<img class="ui mini image" src="/assets/datamotlogolight.svg" />
+			Datamot
+		</a>
+		<a class="item" href="/docs/">Docs</a>
+		<a class="item" href="/tutor/">Tutorial</a>
+		<a class="item" href="/install/">Installation</a>
+		<a class="item" href="/community/">Community</a>
+		<a class="item" href="/blog/">Blog</a>
+		<div class="right menu">
+			<a class="item" href="https://github.com/datamoth/datamoth/">GitHub</a>
+			<a class="item">v0.0.1</a>
+		</div>
+	</div>
+</div>
