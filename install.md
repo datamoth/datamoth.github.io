@@ -4,7 +4,7 @@ title: Installation How To
 permalink: /install/
 ---
 
-# Installtion How To
+# Installation How To
 
 Normally you need to install datamot to some server which is available to push
 via ssh for you and your teammates. Your hadoop cluster and it's services, like
